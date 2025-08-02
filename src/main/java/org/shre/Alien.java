@@ -2,6 +2,16 @@ package org.shre;
 
 public class Alien {
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    private int age;
+
     Alien(){
         System.out.println("Object Created");
     }
