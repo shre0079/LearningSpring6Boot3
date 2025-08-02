@@ -9,4 +9,5 @@
 
     <bean id="laptop" class="org.shre.Laptop">
     </bean>
+
 </beans>
