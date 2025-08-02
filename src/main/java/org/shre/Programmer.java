@@ -5,15 +5,16 @@ public class Programmer {
     private int age;
     private Computer Comp;
 
-    public Programmer(Laptop lap, int age) {
-        this.lap = lap;
-        this.age = age;
+    public Programmer(){
+//        System.out.println("Object Created");
     }
 
-//    public Programmer(int age){
-//        System.out.println("Para Const Called!");
-//        this.age=age;
+//    public Programmer(Computer comp, int age) {
+//          System.out.println("Para Const Called!");
+//        this.Comp = Comp;
+//        this.age = age;
 //    }
+
 
     public int getAge() {
         return age;
@@ -23,22 +24,16 @@ public class Programmer {
         this.age = age;
     }
 
-    private int age;
-
-    public Laptop getLap() {
-        return lap;
+    public Computer getComp() {
+        return Comp;
     }
 
-    public void setLap(Laptop lap) {
-        this.lap = lap;
-    }
-
-    Programmer(){
-        System.out.println("Object Created");
+    public void setComp(Computer comp) {
+        Comp = comp;
     }
 
     public void coding(){
         System.out.println("Coding");
-        lap.compile();
+        Comp.compile();
     }
 }

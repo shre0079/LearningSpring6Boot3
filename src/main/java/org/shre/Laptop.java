@@ -1,10 +1,8 @@
 package org.shre;
 
-public class Laptop {
-    Laptop(){
-        System.out.println("Laptop Object Created");
-    }
+public class Laptop implements Computer {
+    @Override
     public void compile(){
-        System.out.println("Compiling");
+        System.out.println("Compiling using laptop");
     }
 }
