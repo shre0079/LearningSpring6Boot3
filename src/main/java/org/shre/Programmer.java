@@ -12,7 +12,15 @@ public class Alien {
 
     private int age;
 
-    Alien(){
+    public Laptop getLap() {
+        return lap;
+    }
+
+    public void setLap(Laptop lap) {
+        this.lap = lap;
+    }
+
+    Programmer(){
         System.out.println("Object Created");
     }
 
