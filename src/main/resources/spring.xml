@@ -4,7 +4,9 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="alien" class="org.shre.Alien" scope="singleton">
+    <bean id="alien" class="org.shre.Alien" >
+        <property name="age" value="21"></property>
+        <property name="lap" ref="laptop"></property>
     </bean>
 
     <bean id="laptop" class="org.shre.Laptop">
