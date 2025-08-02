@@ -4,10 +4,9 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="alien" class="org.shre.Programmer" >
-        <constructor-arg value="21"/>
-        <constructor-arg ref="laptop" />
-<!--        <property name="lap" ref="laptop"/>-->
+    <bean id="alien" class="org.shre.Programmer" autowire="byType">
+<!--        <property name="Comp" ref="laptop"/>-->
+        <property name="age" value="21"/>
     </bean>
 
     <bean id="laptop" class="org.shre.Laptop">
