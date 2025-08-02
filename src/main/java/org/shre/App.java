@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        Alien obj = (Alien) context.getBean("alien");
+        Programmer obj = (Programmer) context.getBean("alien");
         System.out.println(obj.getAge());
         obj.coding();
     }

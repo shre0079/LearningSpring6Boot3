@@ -1,6 +1,18 @@
 package org.shre;
 
-public class Alien {
+public class Programmer {
+
+    Laptop lap;
+
+    public Programmer(Laptop lap, int age) {
+        this.lap = lap;
+        this.age = age;
+    }
+
+//    public Programmer(int age){
+//        System.out.println("Para Const Called!");
+//        this.age=age;
+//    }
 
     public int getAge() {
         return age;
@@ -26,5 +38,6 @@ public class Alien {
 
     public void coding(){
         System.out.println("Coding");
+        lap.compile();
     }
 }
