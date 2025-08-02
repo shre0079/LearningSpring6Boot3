@@ -8,7 +8,6 @@
 <!--        <property name="Comp" ref="laptop"/>-->
         <property name="age" value="21"/>
     </bean>
-
-    <bean id="laptop" class="org.shre.Laptop">
+    <bean id="Comp1" class="org.shre.Desktop">
     </bean>
 </beans>
