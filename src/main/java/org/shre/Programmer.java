@@ -2,7 +2,8 @@ package org.shre;
 
 public class Programmer {
 
-    Laptop lap;
+    private int age;
+    private Computer Comp;
 
     public Programmer(Laptop lap, int age) {
         this.lap = lap;
