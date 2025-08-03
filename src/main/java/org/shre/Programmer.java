@@ -6,7 +6,7 @@ public class Programmer {
     private Computer Comp;
 
     public Programmer(){
-//        System.out.println("Object Created");
+        System.out.println("Programmer Object Created");
     }
 
 //    public Programmer(Computer comp, int age) {
