@@ -1,8 +1,10 @@
 package org.shre;
 
-public class Laptop implements Computer {
-    @Override
+import org.springframework.stereotype.Component;
+
+@Component
+public class Laptop {
     public void compile(){
-        System.out.println("Compiling using laptop");
+        System.out.println("Compiling using laptop..");
     }
 }
