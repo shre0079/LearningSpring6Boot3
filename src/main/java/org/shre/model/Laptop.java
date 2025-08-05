@@ -1,10 +1,10 @@
-package org.shre;
+package org.shre.model;
 
 import org.springframework.stereotype.Component;
 
 @Component
 public class Laptop implements Computer {
     public void compile(){
-        System.out.println("Compiling using laptop..");
+        System.out.println("Compiling in Laptop");
     }
 }

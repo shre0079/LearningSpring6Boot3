@@ -1,13 +1,13 @@
-package org.shre;
+package org.shre.model;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Programmer {
 
+    @Value("25")
     private int age;
     @Autowired
     private Computer com;
@@ -20,6 +20,7 @@ public class Programmer {
         return com;
     }
 
+    @Autowired
     public void setCom(Computer com) {
         this.com = com;
     }
