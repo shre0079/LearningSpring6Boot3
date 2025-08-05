@@ -8,10 +8,27 @@ import org.springframework.stereotype.Component;
 @Component
 public class Programmer {
 
+    private int age;
     @Autowired
-    Laptop laptop;
+    private Computer com;
 
     public void coding(){
-        System.out.println("Coding");
+        com.compile();
+    }
+
+    public Computer getCom() {
+        return com;
+    }
+
+    public void setCom(Computer com) {
+        this.com = com;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }
